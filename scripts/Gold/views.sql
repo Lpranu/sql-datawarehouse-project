@@ -38,7 +38,7 @@ SELECT
 FROM silver.crm_prd_info pn
 LEFT JOIN silver.erp_px_cat_g1v2 pc
     ON pn.cat_id = pc.id
-WHERE pn.prd_end_dt IS NULL;
+WHERE pn.prd_end_dt IS NULL; -- to get the latest Product 
 
 
 --Fact Table
